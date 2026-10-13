@@ -1,6 +1,6 @@
 # Mini-dsh
 
-> A plugin-based coding-agent harness in TypeScript/Node.js, inspired by DeepSeek Harness's "everything is a plugin" philosophy. · [中文版](./README.zh-CN.md)
+> A plugin-based coding-agent harness in TypeScript/Node.js, inspired by DeepSeek Harness's "everything is a plugin" philosophy.
 
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license" />
