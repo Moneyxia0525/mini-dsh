@@ -1,0 +1,35 @@
+{
+  "name": "mini-dsh",
+  "version": "0.1.0",
+  "description": "Mini-dsh — 基于插件化架构的 Coding Agent Harness（参考 DeepSeek Harness「一切皆插件」思想）",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "bin": {
+    "mini-dsh": "dist/cli/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
+    "start": "node dist/cli/index.js",
+    "agent": "node dist/cli/index.js",
+    "benchmark": "node dist/benchmark/run.js",
+    "smoke": "node dist/smoke/index.js",
+    "test": "npm run build && node --test dist/tests/core.test.js dist/tests/context.test.js dist/tests/harness.test.js"
+  },
+  "keywords": [
+    "agent",
+    "harness",
+    "plugin",
+    "tool-calling",
+    "coding-agent",
+    "deepseek"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.7.0",
+    "typescript": "^5.6.0"
+  }
+}
