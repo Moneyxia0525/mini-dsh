@@ -31,7 +31,6 @@
 - [配置项](#配置项)
 - [安全边界](#安全边界)
 - [Roadmap](#roadmap)
-- [设计文档](#设计文档)
 - [贡献](#贡献)
 - [许可证](#许可证)
 
@@ -411,21 +410,9 @@ Permission 插件提供的是**进程内策略控制**，不是 Docker 或虚拟
 
 ---
 
-## 设计文档
-
-完整的架构设计与取舍分析见 [`技术设计文档.md`](技术设计文档.md)，涵盖：
-
-- MiniPlugin / Service 协议与双 Registry 设计
-- Agent Loop 状态机与预算控制
-- Session 与 Context 管理
-- Benchmark 与消融实验方法论
-- 技术选型与已知局限
-
----
-
 ## 贡献
 
-欢迎提 Issue 与 PR。建议先阅读设计文档了解架构约定，改动机制类逻辑时请跑一遍 Benchmark 回归验证：
+欢迎提 Issue 与 PR。改动机制类逻辑时请跑一遍 Benchmark 回归验证：
 
 ```bash
 npm test
